@@ -1,3 +1,8 @@
+.deps
+.states
+artifacts
+res
+
 # Logs
 logs
 *.log
