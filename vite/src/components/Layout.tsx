@@ -5,7 +5,7 @@ import Header from "./Header";
 
 const Layout:FC = () => {
     return (
-        <Flex bgColor="red.100" maxW="full" mx="auto" minH="100vh" flexDir="column">
+        <Flex  maxW="full" mx="auto" minH="100vh" flexDir="column">
             <Header/>
             <Outlet/>
         </Flex>

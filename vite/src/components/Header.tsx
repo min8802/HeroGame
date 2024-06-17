@@ -7,16 +7,21 @@ const Header:FC = () => {
     const navigate = useNavigate();
 
     return (
-        <Flex alignItems="center" h={20} bgColor="blue.100" justify="center" gap={8}>
-            <Flex maxW={120}>
-                <Image src="./Images/logo.webp"/>
+        <Flex alignItems="center" h={24} justify="center" gap={8} justifyContent="space-between">
+            <Flex maxW={120} >
+                <Image maxW={24} src="./Images/logo1.png" />
             </Flex>
-            <Flex>
-                <Flex>
-                    <Button onClick={() => {navigate("/")}}>Home</Button>
-                    <Button onClick={() => {navigate("/game")}}>Game</Button>
-                    <Button onClick={() => {navigate("/mint")}}>Mint</Button>
+            <Flex w="90%" alignItems="center">
+                <Flex gap={10} display={["none", "none", "flex"]}>
+                    <Button onClick={() => {navigate("/")}} boxSize={24} variant="border" fontSize={24}>Home</Button>
+                    <Button onClick={() => {navigate("/mint")}} boxSize={24} variant="border" fontSize={24}>Mint</Button>
+                    <Button onClick={() => {navigate("/my")}} boxSize={24} variant="border" fontSize={24}>My NFT</Button>
+                    <Button onClick={() => {navigate("/market")}} boxSize={24} variant="border" fontSize={24}>Market</Button>
+                    <Button onClick={() => {navigate("/game")}} boxSize={24} variant="border" fontSize={24}>Game</Button>
                 </Flex>
+            </Flex>
+            <Flex >
+                <Button mr={5} fontSize={20}>로그인</Button>
             </Flex>
         </Flex>
     )
