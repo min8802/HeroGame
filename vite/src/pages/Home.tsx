@@ -1,21 +1,21 @@
 import { Flex, Image } from "@chakra-ui/react";
 import { FC } from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { Element } from "react-scroll";
 
 
 
 const Home:FC = () => {
     return (
-        <Flex minH="100vh" flexDir="column" gap={24}>
-            <ScrollLink to="section1" spy={true} smooth={true} duration={500} onScroll={(e) => console.log(e)}>
-                <Image src="./Images/bg1.webp"/>
-            </ScrollLink>
-            <ScrollLink to="section1" spy={true} smooth={true} duration={500}>
-                <Image src="./Images/bg2.webp"/>
-            </ScrollLink>
-            <ScrollLink to="section1" spy={true} smooth={true} duration={500}>
-                <Image src="./Images/bg3.webp"/>
-            </ScrollLink> 
+        <Flex minH="100vh" flexDir="column">
+            <Element name="section1">
+                <Image src="./Images/bg1.webp" />
+            </Element>
+            <Element name="section2">
+                <Image src="./Images/bg2.webp" />
+            </Element>
+            <Element name="section3">
+                <Image src="./Images/bg3.webp" />
+            </Element>
         </Flex>
     )
 }
