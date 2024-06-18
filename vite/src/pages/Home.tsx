@@ -1,21 +1,18 @@
-import { Flex, Image } from "@chakra-ui/react";
-import { FC } from "react";
-import { Element } from "react-scroll";
+import { Flex } from "@chakra-ui/react";
+import { FC} from "react";
+import Home_C from "../components/Home_C";
+import Home_A from "../components/Home_A";
+import Home_B from "../components/Home_B";
 
 
 
 const Home:FC = () => {
+
     return (
         <Flex minH="100vh" flexDir="column">
-            <Element name="section1">
-                <Image src="./Images/bg1.webp" />
-            </Element>
-            <Element name="section2">
-                <Image src="./Images/bg2.webp" />
-            </Element>
-            <Element name="section3">
-                <Image src="./Images/bg3.webp" />
-            </Element>
+            <Home_A/>
+            <Home_B/>
+            <Home_C/>
         </Flex>
     )
 }
