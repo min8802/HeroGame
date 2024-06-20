@@ -15,10 +15,10 @@ contract MintNft is ERC721Enumerable {
         unrevealedUri = _unrevealedUri;
     }
 
-    function mintNft() public {
+    function mintNft(uint _tokenId) public {
         require(totalSupply() < 4, "No more mint.");
 
-        uint tokenId = totalSupply() + 1;
+        uint tokenId = _tokenId;
 
         _mint(msg.sender, tokenId);
     }

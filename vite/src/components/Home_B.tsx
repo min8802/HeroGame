@@ -16,8 +16,8 @@ const Home_B: FC = () => {
     }
   }, [isObserved]);
   return (
-    <Flex ref={dom} id="B" h="100vh">
-      <Image src="./Images/bg2.webp" w="100%"/>
+    <Flex pos="relative" ref={dom} id="B" h="100vh" alignItems="center" justifyContent="center">
+      <Image src="./Images/bg2.webp" w="100%" h="100vh"/>
     </Flex>
   );
 };
