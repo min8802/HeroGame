@@ -15,7 +15,7 @@ const Layout:FC = () => {
     const [importedNft, setImportedNft] = useState<nftMetadata[]>([]);
 
     useEffect(() => {
-        const contract = new Contract("0x6A88883Ae7885cfac77dD7EA7961048af4fB188D", abi, signer)
+        const contract = new Contract("0x6fB9f6dDA32031701C967B51857e70f969686115", abi, signer)
             setMintContract(contract);
     },[signer])
 
